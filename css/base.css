@@ -1,0 +1,283 @@
+@font-face {
+    font-family: "roboto";
+    src: url(/Roboto/Roboto-VariableFont_wdth\,wght.ttf);
+}
+
+
+* {
+    box-sizing: border-box;
+    font-family: roboto;
+    text-decoration: none;
+    
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    margin: auto;
+    max-width: 56em;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+
+
+
+
+/*wrapper for layout, (use most of time , not all time)*/
+.base__wrapper {
+    
+    position: relative;
+}
+
+/*% can be change for more or less side-space*/
+.base__layout-side-margin{
+    text-align: center;
+    margin-inline:max((50%) / 2, 1.5rem);
+    
+}
+
+/*background img with filter*/
+.base__background-img:before {
+    content: '';
+    background-image: url(../);
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    height: 100%;
+    filter: grayscale(40%) hue-rotate(15deg);
+    
+}
+
+
+/**/
+.base__margin-none {
+    margin: 0;
+}
+
+.base__margin-space {
+    margin-right: 1em;
+}
+
+
+/*font style*/
+
+.base__initial {
+    text-transform: initial;
+}
+
+.base__uppercase-text{
+    text-transform: uppercase;
+}
+
+.base__capitalize-text {
+    text-transform: capitalize;
+}
+
+.base__lowercase-text {
+    text-transform: lowercase;
+}
+
+.base__text-bold {
+    font-weight: bold;
+}
+
+.base__span-block {
+    display: block;
+}
+
+
+
+
+
+/*font size*/
+:root {
+    --fs-sm: clamp(0.8rem, 0.08vi + 0.78rem, 0.84rem);
+    --fs-base: clamp(1rem, 0.23vi + 0.94rem, 1.13rem);
+    --fs-md: clamp(1.25rem, 0.45vi + 1.14rem, 1.5rem);
+    --fs-lg: clamp(1.56rem, 0.79vi + 1.36rem, 2rem);
+    --fs-xl: clamp(1.95rem, 1.29vi + 1.63rem, 2.66rem);
+    --fs-xxl: clamp(2.44rem, 2.02vi + 1.94rem, 3.55rem);
+    --fs-xxxl: clamp(3.05rem, 3.06vi + 2.29rem, 4.73rem);
+}
+
+.base__font-sm {
+    font-size: var(--fs-sm);
+}
+
+.base__font-base {
+    font-size: var(--fs-base);
+}
+
+.base__font-md {
+    font-size: var(--fs-md);
+}
+
+.base__font-lg {
+    font-size: var(--fs-lg);
+}
+
+.base__font-xl {
+    font-size: var(--fs-xl);
+}
+
+.base__font-xxl {
+    font-size: var(--fs-xxl);
+}
+
+.base__font-xxxl {
+    font-size: var(--fs-xxxl);
+}
+
+/*font color*/
+
+.base__font-color {
+    color: rgb(255, 255, 255);
+}
+
+.base__font-color-black {
+    color: rgb(13, 0, 0);
+}
+
+.base__font-color-orange {
+    color: rgb(235, 63, 29);
+}
+
+.base__font-color-trans-grey {
+    color: rgb(176, 176, 176);
+}
+
+.base__font-color-solid {
+    color: rgb(83, 83, 83);
+}
+
+/*text align*/
+
+.base__text-align-left {
+    text-align: left;
+}
+
+.base__text-align-right {
+    text-align: right;
+}
+
+.base__text-align-center {
+    text-align: center;
+}
+
+.base__align-right {
+    display: flex;
+    align-items: end;
+}
+
+/*flex*/
+
+.base__flex {
+    display: flex;
+}
+
+.base__flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.base__flex-start {
+    display: flex;
+    justify-content: start;
+}
+
+.base__flex-end {
+    display: flex;
+    justify-content: end;
+}
+
+.base__flex-space-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+.base__flex-space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.base__flex-space-evenly {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.base__flex-warp {
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+.base__flow {
+    float: right;
+}
+
+.base__relative {
+    position: relative;
+}
+
+/*buttom*/
+.base__buttom {
+    background-color: transparent;
+    border-color: transparent;
+
+}
+
+
+
+/*img*/
+.base__object-fit {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*ul rest*/
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.base__text-d {
+    text-decoration: underline;
+}
+
+footer a {
+    color: rgb(83, 83, 83);
+}
+
+/*grid*/
+
+.base__gird-coluom {
+    grid-column: span 2;
+}
+
+
+
+.base__grid-column {
+    grid-column: 2;
+    margin: 0;
+}
+
+
+
+/*media"*/
+@media (width < 850px) {
+
+    
+}

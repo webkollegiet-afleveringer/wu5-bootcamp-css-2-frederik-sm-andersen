@@ -1,0 +1,29 @@
+.seneste__under-line {
+    border-bottom: 1px solid gray;
+    margin-bottom: 1em;
+}
+
+.seneste__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    gap: 1em;
+}
+
+.seneste__grid-Information {
+    grid-column: 3 span;
+}
+
+.seneste__nyt-margin {
+    margin-right: 1em;
+}
+
+.seneste__forside {
+    gap: 1em;
+    display: flex;
+    margin-bottom: 2em;
+}
+
+.seneste__grid-Information-img {
+    margin-top: 1.1em;
+}

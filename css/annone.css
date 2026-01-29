@@ -1,0 +1,21 @@
+.annone__img {
+text-align: center;
+    margin: auto;
+    display: flex;
+    position: relative;
+    text-align: center;
+    margin-inline:max((100% - auto) / 2, 1.5rem);
+}
+
+.annone__ratio {
+    /* aspect-ratio: 395 / 75; */
+    max-width:  58.25em;
+    max-height: 11.25em;
+}
+
+.annone__text {
+    transform: rotate(90deg);
+    position: absolute;
+    right: -6%;
+    top: 43%;
+}
